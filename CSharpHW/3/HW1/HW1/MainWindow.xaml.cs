@@ -23,8 +23,8 @@ namespace HW1
         public MainWindow()
         {
             InitializeComponent();
-            RegistrationForm registrationForm = new RegistrationForm();
-            registrationForm.Validate();
+            var registrationForm = new RegistrationForm {FirstName = "qq1"};
+            var flag = RegistrationFormValidation.isValid(registrationForm);
         }
     }
 }

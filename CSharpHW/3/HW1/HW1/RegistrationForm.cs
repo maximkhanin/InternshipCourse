@@ -19,5 +19,6 @@ namespace HW1
         public string PhoneNumber { get; set; }
 
         public string AdditionalInfo { get; set; }
+
     }
 }
