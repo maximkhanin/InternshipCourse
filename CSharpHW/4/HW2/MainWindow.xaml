@@ -23,7 +23,7 @@
         </Grid>
         <DatePicker  x:Name="BirthDateText" Grid.Row="1" Margin="10,10,10,10"/>
         <Image Grid.Row="2" x:Name="ZodiacSignsImage" Cursor="None"/>
-        <Label Grid.Row="3"  x:Name="ZodiacSignsText" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" x:Name="ZodiacSignsText" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 
 </Window>
