@@ -10,7 +10,7 @@ namespace HW1
 
         public string LastName { get; set; }
 
-        public DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; }
 
         public string Gender { get; set; }
 

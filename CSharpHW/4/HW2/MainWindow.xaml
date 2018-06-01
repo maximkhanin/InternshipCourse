@@ -1,0 +1,29 @@
+﻿<Window x:Class="HW2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Height="400" Width="300"
+        Title="Lection4 HW2" MinHeight="400" MinWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Type Data" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Content="Run" Grid.Column="1" Margin="10,10,10,10" MinWidth="70" MinHeight="20" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
+        </Grid>
+        <DatePicker  x:Name="BirthDateText" Grid.Row="1" Margin="10,10,10,10"/>
+        <Image Grid.Row="2" x:Name="ZodiacSignsImage" Cursor="None"/>
+        <Label Grid.Row="3"  x:Name="ZodiacSignsText" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+
+</Window>

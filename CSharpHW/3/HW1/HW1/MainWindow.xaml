@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        MinWidth="600" MinHeight="450"
+        Width="600" Height="450"
+        Title="Lection 3 HW1" >
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="First Name" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Content="Last Name" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Content="Birth Date" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Content="Gender" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Content="Email" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Content="Phone number" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Content="Additional information" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Button x:Name="ValidateButton" Grid.Row="7" Grid.Column="0" Margin="10,10,10,10" Content="Validate" Click="ValidateButton_Click"></Button>
+        <TextBox x:Name="FirstNameText" Grid.Row="0" Grid.Column="1" Margin="10,10,10,10"></TextBox>
+        <TextBox x:Name="LastNameText" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10"></TextBox>
+        <DatePicker  x:Name="BirthDateText" Grid.Row="2" Grid.Column="1" Margin="10,10,10,10"/>
+        <TextBox x:Name="GenderText" Grid.Row="3" Grid.Column="1" Margin="10,10,10,10"></TextBox>
+        <TextBox x:Name="EmailText" Grid.Row="4" Grid.Column="1" Margin="10,10,10,10"></TextBox>
+        <TextBox x:Name="PhoneNumberText" Grid.Row="5" Grid.Column="1" Margin="10,10,10,10"></TextBox>
+        <TextBox x:Name="AdditionalInfoText" Grid.Row="6" Grid.Column="1" Margin="10,10,10,10"></TextBox>
+        <Label Name="FirstNameValidationResult" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Name="LastNameValidationResult" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Name="GenderValidationResult" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Name="EmailValidationResult" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Name="PhoneNumberValidationResult" Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Label Name="AdditionalInfoValidationResult" Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
     </Grid>
 </Window>

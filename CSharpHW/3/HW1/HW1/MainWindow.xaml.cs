@@ -23,8 +23,36 @@ namespace HW1
         public MainWindow()
         {
             InitializeComponent();
-            var registrationForm = new RegistrationForm {FirstName = "qq1"};
-            var flag = RegistrationFormValidation.isValid(registrationForm);
+            
+            
+            BirthDateText.SelectedDate = DateTime.Today;
+        }
+
+        private void ValidateButton_Click(object sender, RoutedEventArgs e)
+        {
+            var registrationForm = new RegistrationForm
+            {
+                AdditionalInfo = AdditionalInfoText.Text,
+                BirthDate = BirthDateText.SelectedDate.ToString(),
+                FirstName = FirstNameText.Text,
+                Email = EmailText.Text,
+                Gender = GenderText.Text,
+                LastName = LastNameText.Text,
+                PhoneNumber = PhoneNumberText.Text
+            };
+            Validate(registrationForm);
+        }
+
+        private void Validate(RegistrationForm registrationForm)
+        {
+            FirstNameValidationResult.Content = RegistrationFormValidation.NameValidation(registrationForm.FirstName);
+            LastNameValidationResult.Content = RegistrationFormValidation.NameValidation(registrationForm.LastName);
+            GenderValidationResult.Content = RegistrationFormValidation.GenderValidation(registrationForm.Gender);
+            EmailValidationResult.Content = RegistrationFormValidation.EmailValidation(registrationForm.Email);
+            PhoneNumberValidationResult.Content =
+                RegistrationFormValidation.PhoneNumberValidation(registrationForm.PhoneNumber);
+            AdditionalInfoValidationResult.Content =
+                RegistrationFormValidation.AdditionalInfoValidation(registrationForm.AdditionalInfo);
         }
     }
 }
