@@ -11,7 +11,6 @@ namespace HW1
 
             var photoPrinter = new PhotoPrinter();
             photoPrinter.Print("Test2");
-            photoPrinter.Print("Test2","img2");
 
             var colourPrinter= new ColourPrinter();
             colourPrinter.Print("test3");

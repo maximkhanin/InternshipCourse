@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace HW1
 {
@@ -9,9 +10,9 @@ namespace HW1
             Console.WriteLine("Photo Printer - {0}", text);
         }
 
-        public void Print(string text, string photo)
+        public void Print(Image photo)
         {
-            Console.WriteLine("Photo Printer - {0}, Photo - {1}", text, photo);
+            Console.WriteLine("Photo Printer - {0}", photo);
         }
     }
 }
