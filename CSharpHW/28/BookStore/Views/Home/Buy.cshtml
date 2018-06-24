@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Buy Book";
+}
+<style>
+    td {
+        padding: 1px;
+    }
+</style>
+<h2>Buy</h2>
+<div>
+    <h3>Purchase form</h3>
+    <form method="post">
+        <input type="hidden" value="@ViewBag.BookId" name="BookId" />
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <p>Input name</p>
+                </td>
+                <td><input type="text" name="Person" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Input address</p>
+                </td>
+                <td>
+                    <input type="text" name="Address" />
+                </td>
+            </tr>
+            <tr><td><input type="submit" value="Send" /></td><td></td><td></td></tr>
+        </table>
+    </form>
+</div>
